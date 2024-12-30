@@ -37,11 +37,11 @@ def dijkstra_recursive(graph, start, end, distances=None, previous_nodes=None, v
     return dijkstra_recursive(graph, next_node, end, distances, previous_nodes, visited)
 
 graph = {
-    'Flower-Feather Clan': [('Masters of the Night Wind', 10), ('Children of Echoes', 50), ('Scions of the Canopy', 40)],
-    'Masters of the Night Wind': [('Flower-Feather Clan', 10), ('People of the Springs', 35)],
     'Children of Echoes': [('Flower-Feather Clan', 50), ('Scions of the Canopy', 45)],
     'Scions of the Canopy': [('Flower-Feather Clan', 40), ('Children of Echoes', 45), ('People of the Springs', 15)],
-    'People of the Springs': [('Masters of the Night Wind', 35), ('Scions of the Canopy', 15)]
+    'People of the Springs': [('Masters of the Night Wind', 35), ('Scions of the Canopy', 15)],
+    'Masters of the Night Wind': [('Flower-Feather Clan', 10), ('People of the Springs', 35)],
+    'Flower-Feather Clan': [('Masters of the Night Wind', 10), ('Children of Echoes', 50), ('Scions of the Canopy', 40)]
 }
 
 def main():
