@@ -74,3 +74,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+# Anggota Kelompok:
+# - Hellmina Enjelina Fitri
+# - Putri Galuh Mandarizka
