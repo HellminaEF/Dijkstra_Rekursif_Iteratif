@@ -35,11 +35,11 @@ def dijkstra_iterative(graph, start, end):
     return None, float('inf')
 
 graph = {
-    'Flower-Feather Clan': [('Masters of the Night Wind', 2), ('Children of Echoes', 6), ('Scions of the Canopy', 3)],
-    'Masters of the Night Wind': [('Flower-Feather Clan', 2), ('People of the Springs', 4)],
-    'Children of Echoes': [('Flower-Feather Clan', 6), ('Scions of the Canopy', 5)],
-    'Scions of the Canopy': [('Flower-Feather Clan', 3), ('Children of Echoes', 5), ('People of the Springs', 1)],
-    'People of the Springs': [('Masters of the Night Wind', 4), ('Scions of the Canopy', 1)]
+    'Flower-Feather Clan': [('Masters of the Night Wind', 10), ('Children of Echoes', 50), ('Scions of the Canopy', 40)],
+    'Masters of the Night Wind': [('Flower-Feather Clan', 10), ('People of the Springs', 35)],
+    'Children of Echoes': [('Flower-Feather Clan', 50), ('Scions of the Canopy', 45)],
+    'Scions of the Canopy': [('Flower-Feather Clan', 40), ('Children of Echoes', 45), ('People of the Springs', 15)],
+    'People of the Springs': [('Masters of the Night Wind', 35), ('Scions of the Canopy', 15)]
 }
 
 def main():
@@ -74,5 +74,5 @@ if __name__ == "__main__":
     main()
 
 # Anggota kelompok:
-# Hellmina Enjelina Fitri
-# Putri Galuh Mandarizka
+# - Hellmina Enjelina Fitri
+# - Putri Galuh Mandarizka
